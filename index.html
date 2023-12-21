@@ -1,91 +1,149 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="Barbería Alura - Especialistas en cortes de cabello y barba. ¡Descubre nuestros servicios y productos de calidad!"
-    />
-
     <title>Barbería Alura</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="imagenes/logo.png" type="image/icon type" />
+    <link rel="icon" href="./imagenes/logo.png" type="image/icon type" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Playfair+Display&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.iconify.design/2/2.0.3/iconify.min.css"
     />
   </head>
 
   <body>
-    <header>
-      <div class="caja">
-        <h1><img src="imagenes/logo.png" alt="Logo de Barbería Alura" /></h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="encabezado">
+      <header>
+        <section class="navegacion">
+          <img src="./imagenes/logo.png" alt="Logo del sitio" class="logo" />
+          <h1>Barbería Alura</h1>
+          <div class="navegador">
+            <p>
+              Conócenos un poco mas!!!<input
+                type="button"
+                value="Contactanos"
+                class="contacto"
+                id="myBtn"
+              />
+            </p>
+          </div>
+        </section>
+      </header>
 
-    <img class="banner" src="imagenes/banner.jpg" />
-
-    <main class="informacion">
       <section class="principal">
-        <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+        <div class="texto">
+          <p>
+            En el epicentro vibrante de la metrópolis, emerge con esplendor la
+            Barbería Alura, un enclave que redefine el arte de cuidar cabellos y
+            barbas. Desde su nacimiento en 2020, esta barbería se ha erigido
+            como un faro de estilo en la ciudad, cautivando a nuevos adeptos con
+            cada amanecer.
+          </p>
 
-        <img
-          class="utensillos"
-          src="imagenes/utensilios.jpg"
-          alt="Utensillos de un barbero"
-        />
+          <p class="mision">
+            Nuestra misión trasciende lo convencional: "Infundir autoestima y
+            elevar la calidad de vida a través de la maestría de nuestro
+            oficio".
+          </p>
 
-        <p>
-          Ubicada en el corazón del barrio,
-          <strong>La Barbería Alura</strong> se erige como el epicentro de
-          estilo para tu cabello y barba. Desde su fundación en 2020, La
-          Barbería Alura ha marcado tendencia en la comunidad, ganando la
-          lealtad de nuevos clientes cada día.
-        </p>
+          <p>
+            En nuestro santuario capilar, nos enorgullece presentar a un equipo
+            de virtuosos experimentados, siempre inmersos en la efervescencia de
+            la moda, anticipando sus cambios y movimientos. Este compromiso nos
+            permite brindar a nuestros clientes las últimas corrientes
+            vanguardistas. Nuestra atención, impregnada de un estándar de
+            excelencia y celeridad, se erige como un sello de calidad y
+            garantiza la plena satisfacción de quienes confían en nosotros.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="./imagenes/banner.jpg" class="imagen fade" id="slides" />
+          <img
+            src="./imagenes/establecimiento.png"
+            class="imagen fade"
+            id="slides"
+          />
+          <img src="./imagenes/mural.jpg" class="imagen fade" id="slides" />
+          <img src="./imagenes/entrada.jpg" class="imagen fade" id="slides" />
+          <img src="./imagenes/entrada2.jpg" class="imagen fade" id="slides" />
+          <img
+            src="./imagenes/utensilios2.jpg"
+            class="imagen fade"
+            id="slides"
+          />
+        </div>
+      </section>
+    </div>
 
-        <p id="mision">
-          <em
-            >Nuestra misión es:
-            <strong
-              >"Elevar la autoestima y mejorar la calidad de vida de nuestros
-              clientes a través de cortes y estilos excepcionales".</strong
-            ></em
-          >
-        </p>
-
-        <p>
-          Contamos con un equipo de profesionales experimentados que se
-          mantienen a la vanguardia de las últimas tendencias en el mundo de la
-          moda y la barbería. Nuestra atención se rige por estándares de
-          excelencia y rapidez, asegurando la calidad y satisfacción de nuestros
-          clientes en cada visita.
-        </p>
+    <main>
+      <section class="diferenciales">
+        <h1>Nuestros rasgos únicos y deslumbrantes</h1>
+        <ul>
+          <li>
+            <h1><iconify-icon icon="bx:chat"></iconify-icon></h1>
+            <h2>Conexión personalizada</h2>
+            <p>
+              En Barbería Alura, entendemos que cada individuo es único. Por
+              eso, nuestro equipo está capacitado para ofrecerte una atención
+              personalizada y adaptada a tus necesidades específicas.
+            </p>
+          </li>
+          <li>
+            <h1><iconify-icon icon="bx:home-heart"></iconify-icon></h1>
+            <h2>Rincón exclusivo</h2>
+            <p>
+              Ya sea que estés esperando o siendo atendido, nuestro espacio está
+              diseñado para brindarte la comodidad que mereces, haciendo que te
+              sientas como en tu propio hogar.
+            </p>
+          </li>
+          <li>
+            <h1><iconify-icon icon="bi:geo-alt"></iconify-icon></h1>
+            <h2>Situación privilegiada</h2>
+            <p>
+              Estratégicamente ubicada en el epicentro de la ciudad, Barbería
+              Alura se encuentra rodeada de lugares fascinantes y personas
+              increíbles. ¡Te invitamos a descubrirnos!
+            </p>
+          </li>
+          <li>
+            <h1><iconify-icon icon="fluent:award-16-filled"></iconify-icon></h1>
+            <h2>Maestros certificados</h2>
+            <p>
+              Nuestro equipo se mantiene en constante perfeccionamiento para
+              garantizar a nuestros clientes una experiencia inigualable.
+            </p>
+          </li>
+          <li>
+            <h1><iconify-icon icon="akar-icons:stopwatch"></iconify-icon></h1>
+            <h2>Eficiencia temporal</h2>
+            <p>
+              En nuestra barbería, tu tiempo es invaluable. No te haremos
+              esperar innecesariamente; estamos comprometidos con tu prontitud y
+              satisfacción.
+            </p>
+          </li>
+          <li>
+            <h1><iconify-icon icon="carbon:snowflake"></iconify-icon></h1>
+            <h2>Pureza impecable</h2>
+            <p>
+              Cumpliendo estrictamente con los protocolos sanitarios, nuestro
+              espacio destaca por su impecable limpieza. Compruébalo por ti
+              mismo, ¡somos un oasis de frescura y pulcritud!
+            </p>
+          </li>
+        </ul>
       </section>
 
-      <section class="mapa">
-        <h2 class="titulo-principal">Nuestra Ubicación</h2>
-        <p>Nuestro establecimiento está ubicado en el corazón del barrio</p>
-
-        <div class="mapa-contenido">
+      <section class="ubicacion">
+        <div class="mapa">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63748.71325486741!2d-76.55239737832026!3d3.0152815999999945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3081656ec6e353%3A0x198168a73e927c4b!2sBarber%20shop!5e0!3m2!1ses-419!2sco!4v1703196056711!5m2!1ses-419!2sco"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.2945588177104!2d-76.48287452607441!3d3.015286953963131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3081656ec6e353%3A0x198168a73e927c4b!2sBarber%20shop!5e0!3m2!1ses-419!2sco!4v1703200947134!5m2!1ses-419!2sco"
             width="100%"
             height="300"
             style="border: 0"
@@ -94,61 +152,151 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </section>
 
-      <section class="diferenciales">
-        <h2 class="titulo-principal">Diferenciales</h2>
-
-        <div class="contenido-diferenciales">
-          <ul class="lista-diferenciales">
-            <li class="items">Atención personalizada</li>
-            <li class="items">Espacio diferenciado</li>
-            <li class="items">Localización</li>
-            <li class="items">Profesionales calificados</li>
-            <li class="items">Puntualidad</li>
-            <li class="items">Limpieza</li>
-          </ul>
-          <img src="imagenes/diferenciales.jpg" class="imagen-diferenciales" />
-        </div>
-
-        <div class="video">
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/wcVVXUV0YUY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="texto-ubicacion">
+          <h1 class="titulo-principal">Descubre nuestro Refugio</h1>
+          <p>
+            Sumérgete en el corazón palpitante de la urbe para encontrar nuestro
+            oasis de estilo. Ven y explora nuestro espacio, donde la comodidad y
+            la atención excepcional se entrelazan para ofrecerte una experiencia
+            única.
+          </p>
         </div>
       </section>
-    </main>
 
-    <footer>
-      <img src="imagenes/logo-blanco.png" alt="Logo de Barbería Alura" />
+      <section class="oferta">
+        <h1>Nuestra Galería de Esencias</h1>
+        <ul class="productos">
+          <li>
+            <h2>Melena Magnífica</h2>
+            <img src="./imagenes/cabello.jpg" />
+            <p class="producto-descripcion">
+              Esculpido con tijera o máquina, según tus preferencias
+            </p>
+            <p class="producto-precio">$12.000</p>
+          </li>
 
-      <div class="redes-sociales">
-        <span class="iconify" data-icon="akar-icons:github-fill"></span>
-        <a id="github" href="https://github.com/cpcarlosprieto" target="_blank"
-          >cpcarlosprieto</a
-        >
+          <li>
+            <h2>Barba de Vanguardia</h2>
+            <img src="./imagenes/barba.jpg" />
+            <p class="producto-descripcion">
+              Corte y diseño profesional para tu barba
+            </p>
+            <p class="producto-precio">$12.000</p>
+          </li>
 
-        -
+          <li>
+            <h2>Fusión Estelar</h2>
+            <img src="./imagenes/cabello+barba.jpg" />
+            <p class="producto-descripcion">
+              Paquete completo de estilismo para cabello y barba
+            </p>
+            <p class="producto-precio">$23.000</p>
+          </li>
+        </ul>
+      </section>
 
-        <span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
-        <a
-          id="linkedin"
-          href="https://www.linkedin.com/in/prieto-c"
-          target="_blank"
-          >Carlos Prieto</a
-        >
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input
+              type="text"
+              id="nombreapellido"
+              class="input-padron"
+              required
+            />
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input
+              type="email"
+              id="correoelectronico"
+              class="input-padron"
+              required
+              placeholder="email@dominio.com"
+            />
+
+            <label for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              class="input-padron"
+              required
+              placeholder="(XX) XXX XXXXXXX"
+            />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              name="msj"
+              id="mensaje"
+              cols="70"
+              rows="10"
+              required
+            ></textarea>
+
+            <fieldset>
+              <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+              <label for="radio-email"
+                ><input
+                  type="radio"
+                  name="contacto"
+                  value="email"
+                  id="radio-email"
+                />Email</label
+              >
+
+              <label for="radio-telefono"
+                ><input
+                  type="radio"
+                  name="contacto"
+                  value="telefono"
+                  id="radio-telefono"
+                />Teléfono</label
+              >
+
+              <label for="radio-whatsApp"
+                ><input
+                  type="radio"
+                  name="contacto"
+                  value="whatsApp"
+                  id="radio-whatsApp"
+                  checked
+                />WhatsApp</label
+              >
+            </fieldset>
+
+            <fieldset>
+              <legend>¿En cuál horario prefiere ser atendido?</legend>
+              <select>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+              </select>
+            </fieldset>
+
+            <label class="checkbox"
+              ><input type="checkbox" />¿Le gustaría recibir novedades de
+              Barbería Alura?</label
+            >
+
+            <input type="submit" value="Enviar Formulario" class="enviar" />
+          </form>
+        </div>
       </div>
-
-      <p class="copyright">
-        &copy Carlos Prieto | Challenge Barbería Alura | Oracle Next Education |
-        Alura Latam
-      </p>
-    </footer>
+    </main>
   </body>
+
+  <footer>
+    <img src="imagenes/logo-blanco.png" alt="Logo de Barbería Alura" />
+    <p class="copyright">
+      &copy Carlos Prieto | Challenge Barbería Alura | Oracle Next Education |
+      Alura Latam
+    </p>
+  </footer>
+
+  <script src="acciones.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 </html>
